@@ -1,16 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-#  annotations:
- #   deployment.kubernetes.io/revision: "1"
- # creationTimestamp: "2023-09-04T09:27:50Z"
-#  generation: 1
   labels:
     app: container-demo-app
   name: container-demo-app
-  namespace: default
- # resourceVersion: "30517"
- # uid: 24adc682-4a8c-42f4-92cb-8a21ef344296
 spec:
   progressDeadlineSeconds: 600
   replicas: 2
