@@ -15,6 +15,6 @@ spec:
           service:
             name: container-demo-app
             port:
-              name: http
+              number: 80
         path: /
         pathType: ImplementationSpecific
