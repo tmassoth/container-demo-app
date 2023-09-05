@@ -6,8 +6,8 @@ metadata:
  # creationTimestamp: "2023-09-04T09:27:50Z"
 #  generation: 1
   labels:
-    app: cicd-demo
-  name: cicd-demo
+    app: container-demo-app
+  name: container-demo-app
   namespace: default
  # resourceVersion: "30517"
  # uid: 24adc682-4a8c-42f4-92cb-8a21ef344296
@@ -17,7 +17,7 @@ spec:
   revisionHistoryLimit: 10
   selector:
     matchLabels:
-      app: cicd-demo
+      app: container-demo-app
   strategy:
     rollingUpdate:
       maxSurge: 25%
@@ -27,15 +27,15 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: cicd-demo
+        app: container-demo-app
     spec:
       containers:
-      - name: cicd-demo
-        image: docker.io/tobimason/cicd-demo:latest
+      - name: container-demo-app
+        image: docker.io/tobimason/container-demo-app:latest
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
-            name: cicd-demo
+            name: container-demo-app
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
