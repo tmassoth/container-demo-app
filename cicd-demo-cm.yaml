@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cicd-demo
+  namespace: default
+data:
+  HOSTNAME: "TEST"
+  BOX1: "DRIS"
+  BOX2: "Containerplattform"
+  BOX3: "Serverbetrieb"
+  BOX4: "..."
