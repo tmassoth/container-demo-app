@@ -4,14 +4,7 @@ metadata:
   annotations:
     meta.helm.sh/release-name: container-demo-app
     meta.helm.sh/release-namespace: default
-#  labels:
-#    app.kubernetes.io/component: server
-#    app.kubernetes.io/instance: argo-cd
-#    app.kubernetes.io/managed-by: Helm
-#    app.kubernetes.io/name: argo-cd
-#    helm.sh/chart: argo-cd-4.7.21
   name: container-demo-app-traefik
-  namespace: default
 spec:
   ingressClassName: traefik
   rules:
@@ -25,7 +18,3 @@ spec:
               name: http
         path: /
         pathType: ImplementationSpecific
-#  tls:
-#  - hosts:
-#    - vote.rd.localhost
-#    secretName: argo-cd.rd.localhost-tls
