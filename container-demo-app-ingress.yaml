@@ -2,7 +2,7 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   annotations:
-    meta.helm.sh/release-name: cicd-demo
+    meta.helm.sh/release-name: container-demo-app
     meta.helm.sh/release-namespace: default
 #  labels:
 #    app.kubernetes.io/component: server
@@ -10,17 +10,17 @@ metadata:
 #    app.kubernetes.io/managed-by: Helm
 #    app.kubernetes.io/name: argo-cd
 #    helm.sh/chart: argo-cd-4.7.21
-  name: cicd-demo-traefik
+  name: container-demo-app-traefik
   namespace: default
 spec:
   ingressClassName: traefik
   rules:
-  - host: cicd-demo.rd.localhost
+  - host: container-demo-app.rd.localhost
     http:
       paths:
       - backend:
           service:
-            name: cicd-demo
+            name: container-demo-app
             port:
               name: http
         path: /
