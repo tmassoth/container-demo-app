@@ -2,15 +2,15 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    app: cicd-demo
-  name: cicd-demo
+    app: container-demo-app
+  name: container-demo-app
 spec:
   type: ClusterIP
   ports:
-  - name: "cicd-demo"
+  - name: "container-demo-app"
     port: 80
     targetPort: 8080
 #    nodePort: 31000
   selector:
-    app: cicd-demo
+    app: container-demo-app
   
