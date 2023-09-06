@@ -6,5 +6,5 @@ data:
   HOSTNAME: "TEST"
   BOX1: "Containerplattform"
   BOX2: "Agile Software-Entwicklung"
-  BOX3: "Rechenzentrum und IT-Service-Prozesse"
-  BOX4: "Komplexe Client-Server-Infrastruktur"
+  BOX3: "Digitale Rentenübersicht"
+  BOX4: "Rechenzentrum und IT-Service-Prozesse"
