@@ -4,7 +4,7 @@ metadata:
   name: container-demo-app
 data:
   HOSTNAME: "TEST"
-  BOX1: "DRIS"
-  BOX2: "Containerplattform"
-  BOX3: "Serverbetrieb"
-  BOX4: "..."
+  BOX1: "Containerplattform"
+  BOX2: "Agile Software-Entwicklung"
+  BOX3: "Rechenzentrum und IT-Service-Prozesse"
+  BOX4: "Komplexe Client-Server-Infrastruktur"
