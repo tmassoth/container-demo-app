@@ -24,7 +24,7 @@ spec:
     spec:
       containers:
       - name: container-demo-app
-        image: docker.io/tobimason/container-demo-app:latest
+        image: docker.io/tobimason/container-demo-app:1.1
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
