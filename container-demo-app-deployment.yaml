@@ -5,26 +5,18 @@ metadata:
     app: container-demo-app
   name: container-demo-app
 spec:
-  progressDeadlineSeconds: 600
   replicas: 2
-  revisionHistoryLimit: 10
   selector:
     matchLabels:
       app: container-demo-app
-  strategy:
-    rollingUpdate:
-      maxSurge: 25%
-      maxUnavailable: 25%
-    type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
       labels:
         app: container-demo-app
     spec:
       containers:
       - name: container-demo-app
-        image: docker.io/tobimason/container-demo-app:1.1
+        image: docker.io/tobimason/container-demo-app:1.2
         imagePullPolicy: Always
         envFrom:
         - configMapRef:
